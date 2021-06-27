@@ -1,0 +1,37 @@
+# <TYPE>: (If applied, this commit will...) <SUBJECT> (Max 50 char)
+# |<----  Using a Maximum Of 50 Characters  ---->|
+
+
+# Explain why this change is being made
+# |<----           Using a Wrap Maximum Of 72 Characters          ---->|
+
+# Provide links or keys to any relevant tickets, articles or other resources
+# Example: Github issue #23
+
+# --- COMMIT END ---
+# 
+# <TYPE> can be 
+#    feat     (new feature)
+#    fix      (bug fix)
+#    refactor (refactoring production code)
+#    style    (formatting, missing semi colons, etc; no code change)
+#    docs     (changes to documentation)
+#    test     (adding or refactoring tests; no production code change)
+#    chore    (updating grunt tasks etc; no production code change)
+#
+# Based on adeekshith's commit message template 
+# https://gist.github.com/adeekshith/cd4c95a064977cdc6c50 (Licence CC)
+#
+# --------------------
+#
+# Remember to
+#   - Separate subject line from body with a blank line
+#   - Limit the subject line to 50 chars
+#   - Capitalize the subject line
+#   - Not end the subject line with a period
+#   - Use the imperative mood in the subject line
+#   - Wrap the body at 72 chars
+#   - Use the body to explain what and why instead how
+#
+# Based on Chris Beam's 7 rules of a great Git commit message
+# https://chris.beams.io/posts/git-commit/#seven-rules (Licence CC)
