@@ -14,3 +14,4 @@ See [LICENSE](LICENSE) for more information.
 - [ ] Dependabot Configuration
 - [ ] Finalize README template
 - [ ] Finalize changelog template
+- [ ] Add initial certification guide
