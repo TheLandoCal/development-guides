@@ -114,7 +114,13 @@ Below you'll find notes and sources by Skills Measured. The skills outlined are 
       - Connects data sources and event handlers
         - Azure Functions / Logic Apps can be set as handlers
       - Works as a Pub/Sub
-- Windows Virtual Desktop: ???
+- Windows Virtual Desktop: Desktop/App virtualization service
+  - Akin to Remote Desktop Services (RDS)
+  - Can connect from any* OS or via a web browser
+  - Supports Windows 10 Multi-session, so multiple users can use the same resources for Desktop access
+  - Users' data/files are persisted on a separate disk (e.g. OneDrive) that is attached upon login
+  - Utilizes Azure AD
+  - Only supports Windows OS
 - Networking
   - Virtual Networks (VNet): Enables Azure resources to communicate
     - Same concepts as physical networking, just abstracted into the cloud
