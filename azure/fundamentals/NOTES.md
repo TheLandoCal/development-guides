@@ -83,10 +83,54 @@ Below you'll find notes and sources by Skills Measured. The skills outlined are 
 
 ### Describe core resources available in Azure
 
-- Virtual Machines, Azure App Services, Azure Container Instances (ACI), Azure Kubernetes Service (AKS), and Windows Virtual Desktop
-- Virtual Networks, VPN Gateway, Virtual Network peering, and ExpressRoute
-- Container (Blob) Storage, Disk Storage, File Storage, and storage tiers
-- Cosmos DB, Azure SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, and SQL Managed Instance
+- Compute: Group of services related to running application workloads
+  - Virtual Machines: IaaS with full VM control
+    - Virtualizes the hardware
+    - Must maintain and patch VMs
+  - Azure App Services: PaaS to host web apps (akin to AWS Elastic Beanstalk)
+    - Similar to traditional web hosting, but Azure manages the web services
+    - WebJobs (like Cron Jobs) can be configured to run on the underlying VM
+    - Default URL: *.azurewebsites.net
+    - You can run multiple app services on the same app service plan
+  - Azure Container Instances (ACI): Virtualized environments for running applications
+    - Virtualizes the Operating System
+    - Packaged environment that can run on any hosting option (local machine, physical server, VMs in cloud, Instances in the cloud)
+    - A runnable instance of a container image
+    - Azure Container Registry (like the Docker Hub)
+    - Intended for smaller applications/environemnts: 1-to-1 instance to image
+      - Limited scalability and without high availability
+    - Kudu portal allows you to view logs and upload new website files as a zip
+  - Azure Kubernetes Service (AKS):
+    - Container management system
+    - Intended for more complex containers architectures or more granular management
+    - Pods: Groups of containers; Nodes: VMs
+  - Windows Virtual Desktop: ???
+  - Serverless Computing: Build apps without any infrastructure management
+    - Azure Functions: Run small blocks of code
+      - Initiated by triggers
+    - Azure Logic Apps: Configure workflows in the cloud
+      - Can call to and from Azure functions
+      - Uses UI based "programming" (akin to Salesforce Flows/Process Builder)
+    - Azure Event Grid: Build apps to respond to events
+      - Connects data sources and event handlers
+        - Azure Functions / Logic Apps can be set as handlers
+      - Works as a Pub/Sub
+- Networking
+  - Virtual Networks
+  - VPN Gateway
+  - Virtual Network peering
+  - ExpressRoute
+- Data Storage
+  - Container (Blob) Storage
+  - Disk Storage
+  - File Storage
+  - Storage tiers
+- Database Services
+  - Cosmos DB
+  - Azure SQL Database
+  - Azure Database for MySQL
+  - Azure Database for PostgreSQL
+  - SQL Managed Instance
 - Azure Marketplace
 
 ## Describe core solutions and management tools on Azure (10-15%)
