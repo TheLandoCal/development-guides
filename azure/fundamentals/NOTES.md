@@ -104,7 +104,6 @@ Below you'll find notes and sources by Skills Measured. The skills outlined are 
     - Container management system
     - Intended for more complex containers architectures or more granular management
     - Pods: Groups of containers; Nodes: VMs
-  - Windows Virtual Desktop: ???
   - Serverless Computing: Build apps without any infrastructure management
     - Azure Functions: Run small blocks of code
       - Initiated by triggers
@@ -115,11 +114,32 @@ Below you'll find notes and sources by Skills Measured. The skills outlined are 
       - Connects data sources and event handlers
         - Azure Functions / Logic Apps can be set as handlers
       - Works as a Pub/Sub
+- Windows Virtual Desktop: ???
 - Networking
-  - Virtual Networks
-  - VPN Gateway
-  - Virtual Network peering
-  - ExpressRoute
+  - Virtual Networks (VNet): Enables Azure resources to communicate
+    - Same concepts as physical networking, just abstracted into the cloud
+    - By default, VNets are isolated from each other, allows outbound access, and deny inbound access
+    - VNet Peering enables communication between VNets
+    - Public IPs enable communication from external internet traffic
+    - Use load balancers to distribute traffic for high availability
+      - Public load balancers translate IPs from public to private and acts as a port forwarder
+    - Use Application Gateway for more networking security and configuration
+      - SSL Termination: Decrypts incoming in traffic to reduce encryption overhead once inside the back end network
+      - Autoscaling: Increase/decrease resources based on traffic load patterns
+      - Session Affinity: Ensures users return to the same web server after starting a session
+      - HTTP Header Rewriting: Can change HTTP headers as needed to route to the proper server
+      - Advanced Routing: Supports routing on more than IP address and port
+      - Web Application Firewall (WAF): Protects again common exploits and vulnerabilities (e.g. XSS)
+  - VPN Gateway: A service running on a VM within the Virtual Network to create a site-to-site VPN between on-premise servers and Azure resources
+  - ExpressRoute: A private connection used to connect to Azure using a 3rd party service provider (e.g. AT&T, Verizon) who are co-located with Azure hardware
+    - Alternative to a VPN Gateway
+    - Uses the BGP protocol
+    - ExpressRoute Direct: A direct connection between Microsoft Edge routes and an on-premise network
+      - More costly, but may be used for governments and banks that required higher security standards/protocols
+    - Pricing can be metered or unlimited
+    - Has faster internet speeds
+  - Network Security Groups (NSGs): Rules for controlling inbound and outbound communication to VMs
+  - Azure Firewall: A more detail version of NSGs
 - Data Storage
   - Container (Blob) Storage
   - Disk Storage
