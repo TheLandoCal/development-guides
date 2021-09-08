@@ -44,7 +44,6 @@ Below you'll find notes and sources by Skills Measured. The skills outlined are 
     - Usually provided in a web application without the need for installation
     - Examples: Office 365, Gmail, Salesforce, Dropbox
     - Scenarios: Access to sophisticated applications
-- Serverless Computing: ???
 
 ### Describe the differences between types of cloud computing
 
@@ -63,12 +62,24 @@ Below you'll find notes and sources by Skills Measured. The skills outlined are 
 ### Describe the core Azure architectural components
 
 - Regions and Region Pairs
-- Availability Zones
-- Resource Groups
+  - Region: Physically location of data center(s)
+  - Region Pairs: Data centers located 300+ miles apart for redundancy in case of disaster
+  - Exceptions: Globel services don't not need to specify a region (e.g. Azure AD Tenant)
+  - Consider user location, compliance, and resource availability when choosing a region
+  - Data may be replicated outside of your specified region for certain services
+- Availability Zones: Unique, physical locations within a single region (minimum of 3 when available)
+  - Can use load balancing for redundancy when availability zones are not possible
+- Resource: A manageable item in Azure
+- Resource Groups: A container that holds related resources
+  - Group resources should share the same lifecycle
+  - Group resources only exist in a single group at a time, but can be moved
+  - Group resources can communicate across groups and be in different regions
+  - Can export metadata as JSON for IaC
 - Subscriptions
 - Management Groups
-- Azure Resource Manager
-- explain Azure resources
+- Azure Resource Manager (ARM): Deployment and management service for Azure
+  - Azure Portal, Azure PowerShell, Azure CLI, and Azure SDKs are just abstractions of the ARM REST API
+  - Authentication is management by Azure AD
 
 ### Describe core resources available in Azure
 
