@@ -1,8 +1,12 @@
 # AZ-900: Microsoft Azure Fundamentals Notes
 
-Below you'll find notes and sources by Skills Measured. The skills outlined are based on the exam skill outline found on [Exam AZ-900: Microsoft Azure Fundamentals > Skills measured](https://docs.microsoft.com/en-us/learn/certifications/exams/az-900)
+Below you'll find notes and sources by Skills Measured. The skills outlined are based on the exam skill outline found on [Exam AZ-900: Microsoft Azure Fundamentals > Skills measured](https://docs.microsoft.com/en-us/learn/certifications/exams/az-900).
+
+PRO TIP: Use your browser's Read-Aloud functionality to make text-only pages feel more like an instructor-led course.
 
 ## Describe Cloud Concepts (20-25%)
+
+Learning Path: [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-cloud-concepts/)
 
 ### Identify the benefits and considerations of using cloud services
 
@@ -58,6 +62,8 @@ Below you'll find notes and sources by Skills Measured. The skills outlined are 
   - Azure offers Sovereign Clouds (e.g. Azure China) that fall under the community cloud model
 
 ## Describe Core Azure Services (15-20%)
+
+Learning Path: [Azure Fundamentals part 2: Describe core Azure services](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-azure-services/)
 
 ### Describe the core Azure architectural components
 
